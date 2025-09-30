@@ -31,57 +31,215 @@
 
 
         </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.ColumnSpan="3" Margin="6">
+
+            <Grid.ColumnDefinitions>
+                
+                <ColumnDefinition Width="Auto"/> <!--Name-->
+                <ColumnDefinition Width="*"/>    <!--Space-->
+                <ColumnDefinition Width="Auto"/> <!--Hp-->
+                
+            </Grid.ColumnDefinitions>
+
+            <!--Name-->
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Margin="2" Padding="5">
+
+                <TextBlock Text="Name" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            </Border>
+            
+            <!--Space-->
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Margin="2" Padding="5">
+                <TextBlock Text="(empty)" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            
+            <!--Hp-->
+            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Margin="2" Padding="5">
+
+                <TextBlock Text="Hp" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            </Border>
+            
+        </Grid>
         
         
-        <!-- Header -->
+        <!--Image row 1-->
 
-        <Border Grid.Row="0" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
-            <TextBlock Text="Header" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        </Border>
-        
-        <!-- Image -->
+        <Border Grid.Row="1" Grid.ColumnSpan="3" Margin="6" BorderBrush="Black" BorderThickness="1" Background="LightGray">
 
-        <Border Grid.Row="1" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
-
-            <Rectangle Width="200" Height="200" Fill="DarkGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <Rectangle Width="220" Height="220" Fill="DarkGray" HorizontalAlignment="Center" VerticalAlignment="Center"/>
 
         </Border>
         
         
-        <!-- Sub Info-->
+        <!--Sub info-->
+
+        <Border Grid.Row="2" Grid.ColumnSpan="3" Margin="6" BorderBrush="Black" BorderThickness="1">
+            <TextBlock Text="Sub-Info / No / POKEMON TYPE / HT / WT" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        </Border>
 
         
-        <Border Grid.Row="2" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+        <!--Attack 1-->
 
-            <TextBlock Text="Sub-Info" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Grid Grid.Row="3" Grid.ColumnSpan="3" Margin="6">
 
-        </Border>
+            <Grid.RowDefinitions>
+
+
+                <RowDefinition Height="Auto"/>
+                <!--Attack Header-->
+                <RowDefinition Height="Auto"/>
+                <!--Attack description-->
+
+
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+
+                <ColumnDefinition Width="Auto"/> <!--Icon-->
+                <ColumnDefinition Width="*"/>    <!--Name-->
+                <ColumnDefinition Width="Auto"/> <!--Damage-->
+
+            </Grid.ColumnDefinitions>
+
+
+
+
+            <!--§Header Row-->
+            <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+                <TextBlock Text="Icon"/>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+                <TextBlock Text="ATTACK NAME" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+                <TextBlock Text="Dmg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
+            
+            
+            <!--Description Row-->
+            <Border Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+                <TextBlock Text="ATTACK, Description herse it is good to do when you do to do something do it an djust is do ans dme whi jUST TO FILL GAPS" TextWrapping="Wrap"/>
+            </Border>
+
+            
+            
+            
+        </Grid>
         
-        <!-- Move 1 -->
+      <!--Attack 2-->
+        <Grid Grid.Row="4" Grid.ColumnSpan="3" Margin="6" >
 
-        <Border Grid.Row="3" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <Grid.RowDefinitions>
 
-            <TextBlock Text="Move 1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto"/>
 
-        </Border>
+            </Grid.RowDefinitions>
 
-        <Border Grid.Row="4" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <Grid.ColumnDefinitions>
 
-            <TextBlock Text="Move 2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
 
-        </Border>
+            </Grid.ColumnDefinitions>
 
-        <Border Grid.Row="5" Grid.ColumnSpan="3" Margin="10" BorderBrush="Black" BorderThickness="1">
+            <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2" >
 
-            <TextBlock Text="Weakness" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Icon"/>
 
-        </Border>
+            </Border>
 
-        <Border Grid.Row="6" Grid.ColumnSpan="3" Margin="5" BorderBrush="Black" BorderThickness="1">
+            <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
 
-            <TextBlock Text="Fotter" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="Attack name" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Border>
 
-        </Border>
+            <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
 
+                <TextBlock Text="dmg" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+            </Border>
+
+            <Border Grid.Row="1" Grid.ColumnSpan="3" Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2" >
+
+                <TextBlock Text="ATTACK, The description goes here and you describe the attack with descriptions" TextWrapping="Wrap" />
+
+            </Border>
+            
+        </Grid>
+
+
+        <!--Weakness / ...-->
+        <Grid Grid.Row="5" Grid.ColumnSpan="3" Margin="6">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+
+                <TextBlock Text="Weakness"/>
+                
+            </Border>
+
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+
+                <TextBlock Text="Resistance"/>
+                
+            </Border>
+
+            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+
+                <TextBlock Text="Retreat"/>
+
+            </Border>
+            
+        </Grid>
+        
+        
+        <!--Fotter-->
+
+
+        <Grid Grid.Row="6" Grid.ColumnSpan="3" Margin="6">
+
+            <Grid.ColumnDefinitions>
+                
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+                
+            </Grid.ColumnDefinitions>
+
+            <Border Grid.Column="0" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+
+                <TextBlock Text="# / SET"/>
+
+            </Border>
+
+
+            <Border Grid.Column="1" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+
+                <TextBlock Text="CopyWrite text"/>
+
+            </Border>
+
+            <Border Grid.Column="2" BorderBrush="Black" BorderThickness="1" Padding="5" Margin="2">
+
+                <TextBlock Text="jadajada wadawada nicenice" TextWrapping="Wrap"/>
+
+            </Border>
+            
+        </Grid>
+        
+        
+        
     </Grid>
 </Window>
